@@ -1,0 +1,72 @@
+header {
+  background: linear-gradient(45deg, #8E54E9, #4776E6);
+  width: 100%;
+  padding: 3rem 0;
+  color: #FFF;
+}
+header h1 {
+  margin-top: 0;
+}
+footer {
+  border-top: 1px solid #F3F3F3;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 2rem 0 1rem 0;
+}
+nav a {
+  display: block;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 14pt;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  nav a {
+    display: inline-block;
+    margin: 0 1rem;
+  }
+}
+nav a:hover {
+  color: #FFF;
+  text-decoration: none;
+  box-shadow: 0 2px 0 0 #FFF;
+}
+nav :first-child {
+  margin-left: 0;
+}
+.card {
+  position: relative;
+  background: #4776E6;
+  min-height: 150px;
+  padding: 1.5rem;
+  margin-bottom: 16px;
+  color: #FFF;
+}
+.card h3,
+.card h4,
+.card h5,
+.card h6 {
+  margin-top: 0;
+}
+.card .left {
+  float: left;
+}
+.card .right {
+  position: absolute;
+  right: 3rem;
+}
+.card .bottom {
+  position: absolute;
+  bottom: 1.5rem;
+  width: 100%;
+}
+.card:hover,
+.card:active {
+  background: linear-gradient(45deg, #6667E7, #4776E6);
+}
+.card-out:hover * {
+  text-decoration: none;
+}
+.card-out:hover h3 {
+  text-decoration: underline;
+}
