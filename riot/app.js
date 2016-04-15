@@ -60,9 +60,8 @@ merge = function() {
   secondids = second.map(function(item) {
     return item.id;
   });
-  inters = secondids.filter(function(item) {
-    return firstids.indexOf(item) > -1;
-  });
+  inters = array_intersect(firstids, secondids);
+  alert(inters.length);
   console.log(inters);
   self.founditems = first.filter(function(item) {
     return inters.indexOf(item.id) !== -1;

@@ -105,10 +105,14 @@
 				item.id
 
 			secondids = second.map (item)->
-				item.id
+				item.id			
 
-			inters = secondids.filter (item)->
-				return firstids.indexOf(item) > -1
+			#inters = secondids.filter (item)->
+			#	return firstids.indexOf(item) > -1
+
+			inters = array_intersect(firstids, secondids)
+
+			alert inters.length
 
 			console.log inters
 
