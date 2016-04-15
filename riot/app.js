@@ -61,7 +61,6 @@ merge = function() {
     return item.id;
   });
   inters = array_intersect(firstids, secondids);
-  alert(inters.length);
   console.log(inters);
   self.founditems = first.filter(function(item) {
     return inters.indexOf(item.id) !== -1;

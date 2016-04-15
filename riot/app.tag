@@ -112,8 +112,6 @@
 
 			inters = array_intersect(firstids, secondids)
 
-			alert inters.length
-
 			console.log inters
 
 			self.founditems = first.filter (item)->
