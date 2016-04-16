@@ -15,7 +15,7 @@ var hash = { items: [] };
 var where = Args.where;
 var start = parseInt(Args.start);
 var fields = Args.fields;
-var end = 25000;
+var end = Args.amount;
 var i = 0;
 
 while(i != end) {

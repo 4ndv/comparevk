@@ -21,6 +21,8 @@ fetch = function(group) {
     where: group.id,
     start: group.offset,
     fields: 'photo_50',
+    amount: '25000',
+    func_v: 2,
     v: '5.50'
   }, function(r) {
     console.log(r);
