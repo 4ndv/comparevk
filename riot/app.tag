@@ -34,11 +34,11 @@
 					  </div>
 					  <div class="media-body">
 					    <h4 class="media-heading">{name}</h4>
-					    <div class="progress">
-							  <div class="progress-bar" role="progressbar" style="width: {subs_processed}%;">
-							    {subs_processed}%
-							  </div>
+					    <div class="progress" hide={subs_processed == 100}>
+							<div class="progress-bar" role="progressbar" style="width: {subs_processed}%;">
+								{subs_processed}%
 							</div>
+						</div>
 					  </div>
 					</div>
 		  	</div>
