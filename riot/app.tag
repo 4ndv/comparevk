@@ -49,7 +49,8 @@
 	<virtual if={done}>
 		<hr />
 			<h4>Пересечений: {foundcount}</h4>
-		  <div class="media" each={founditems}>
+				<p><i>Выводится максимум 200 пользователей</i></p>
+		  	<div class="media" each={founditems}>
 			  <div class="media-left">
 			    <a href="#">
 			      <img class="media-object" src="{photo_50}">
@@ -120,6 +121,7 @@
 			console.log self.founditems
 
 			self.foundcount = self.founditems.length
+			self.founditems = self.founditems.slice(0, 200)
 
 			self.update { working: null, done: true }
 
