@@ -21,7 +21,7 @@ fetch = function(group) {
     where: group.id,
     start: group.offset,
     fields: 'photo_50',
-    amount: '25000',
+    amount: '15000',
     func_v: 2,
     v: '5.50'
   }, function(r) {
@@ -41,7 +41,7 @@ fetch = function(group) {
       self.update({
         groups: self.groups
       });
-      group.offset += 25000;
+      group.offset += 15000;
       return fetch(group);
     }
   });

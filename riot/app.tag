@@ -75,7 +75,7 @@
 		fetch = (group)->
 			#VK.Api.call 'groups.getMembers', { group_id: group.id, offset: group.offset, fields: 'photo_50, city', v: '5.50' }, (r)->
 			console.log group.offset
-			VK.Api.call 'execute.massfetch', { where: group.id, start: group.offset, fields: 'photo_50', amount: '25000', func_v: 2, v: '5.50' }, (r)->
+			VK.Api.call 'execute.massfetch', { where: group.id, start: group.offset, fields: 'photo_50', amount: '15000', func_v: 2, v: '5.50' }, (r)->
 				console.log r
 				if r.error
 					fetch group
@@ -89,7 +89,7 @@
 					self.members[group.index] = self.members[group.index].concat r.response.items
 					self.groups[group.index].subs_processed = Math.round(((group.offset/group.total)*100)*100)/100
 					self.update { groups: self.groups }
-					group.offset += 25000
+					group.offset += 15000
 					fetch group
 
 		merge = ->
